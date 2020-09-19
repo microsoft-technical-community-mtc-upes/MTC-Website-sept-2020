@@ -790,7 +790,7 @@ features
 }
 
 .features-small-item .icon i {
-  font-size: 18px;
+  font-size: 28px;
   color: #fff;
 }
 
@@ -1469,7 +1469,7 @@ footer .social li a {
   line-height: 36px;
   border-radius: 50%;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
