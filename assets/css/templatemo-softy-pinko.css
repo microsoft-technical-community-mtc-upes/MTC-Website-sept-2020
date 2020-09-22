@@ -1356,7 +1356,7 @@ blog
 
 .blog-post-thumb .text {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 20px;
   color: #777;
   letter-spacing: 0.26px;
   line-height: 26px;
@@ -1388,10 +1388,10 @@ blog
 contact
 --------------------------------------------- 
 */
-
+/* 
 #contact-us {
   padding: 160px 0px;
-}
+} */
 
 #contact-us h5 {
   font-weight: 500;
@@ -1402,20 +1402,38 @@ contact
 }
 
 .contact-text {
-  display: flex;
+  /* display: flex; */
+  /* width: 80%; */
+  margin: 0 auto;
   font-weight: 400;
   font-size: 24px;
   color: #2280d3;
   letter-spacing: 0.6px;
   line-height: 26px;
 }
-.contact-text > div{
+.contact-text li {
+  text-align: left;
+}
+
+.center-heading .unimap {
+  text-align: right !important;
+}
+
+/* .contact-text > div{
   padding: 100px;
+} */
+.contact-text div {
+  padding: 1rem;
 }
 .contact-text p {
   margin-bottom: 38px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between;
 }
-
+.center-heading .map_align {
+  display: flex;
+}
 .contact-form input,
 .contact-form textarea {
   color: #777;
