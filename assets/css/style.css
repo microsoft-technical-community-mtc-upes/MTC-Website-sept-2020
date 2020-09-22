@@ -1,0 +1,119 @@
+.login-box {
+
+	width: 100%;
+	padding: 25px 35px 45px 5px;
+
+	box-sizing: border-box;
+
+  }
+  
+  .login-box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #000000;
+	text-align: center;
+  }
+  
+  .login-box .user-box {
+	position: relative;
+	padding-top: 2px;
+  }
+  
+  .login-box .user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #000000;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #000000;
+	outline: none;
+	background: transparent;
+  }
+  .login-box .user-box select {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #000000;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #000000;
+	outline: none;
+	background: transparent;
+  }
+  .login-box .user-box label {
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #000000;
+	pointer-events: none;
+	transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: transparent;
+	font-size: 12px;
+  }
+  
+  .login-box form a {
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #0099cc;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 40px;
+	letter-spacing: 4px
+  }
+  
+  
+  
+  .login-box a span {
+	position: absolute;
+	display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #0099cc);
+	animation: btn-anim1 1s linear infinite;
+  }
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .upload-btn-wrapper input[type=file] {
+    opacity: 0;
+  }
