@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
 
     <title>Microsoft Technical Community</title>
-<!-- favicon -->
-<link rel=" icon" href="./assets/images/image1.png" >
+    <!-- favicon -->
+    <link rel=" icon" href="./assets/images/image1.png">
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -42,6 +42,9 @@
 
 
     <!-- ***** Header Area Start ***** -->
+    <header></header>
+
+
     <header class="header-area header-sticky">
         <div class="container">
             <div class="row">
@@ -73,29 +76,15 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** Welcome Area Start ***** -->
-    <div class="welcome-area" id="welcome">
 
-        <!-- ***** Header Text Start ***** -->
-        <div class="header-text">
-            <div class="container">
-                <div class="">
-                    <div class="">
-                        <h1 style="font-weight: 700;">MICROSOFT TECHNICAL COMMUNITY</h1>
-                        <h2 style="color: white;">Technology is making people's lives easier.<br> We, here at MTC are, constantly <strong>Innovating, Inventing and Improvising.</strong></h2>
+    <footer>
+        <div style="padding-bottom: 10%;" class="container">
 
-                        <!-- <a href="#features" class="main-button-slider">Discover More</a> -->
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- ***** Header Text End ***** -->
-    </div>
-    <!-- ***** Welcome Area End ***** -->
-
+    </footer>
 
     <!-- ***** Features Big Item Start ***** -->
-    <section class="section" style="padding-top: 0%;">
+    <section class="section padding-top-70" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
@@ -106,8 +95,8 @@
                         <div class="login-box">
 
 
-                            <form action="registration.php" method="post">
-                                <div class="user-box">
+                            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                               <div class="user-box">
 
                                     <input type="text" name="user" id="user" required=" ">
                                     <label for="user "> Full Name: </label>
@@ -119,9 +108,12 @@
                                 </div>
 
                                 <div class="user-box">
-                                    <input type="number" name="contact" id="contact" required=" ">
+                                    <input type="text" name="contact" id="contact" required=" ">
                                     <label for="contact"> Contact(Whatsapp): </label>
                                 </div>
+
+
+
 
                                 <div class="user-box">
                                     <input type="number" name="sap" id="sap" required=" ">
@@ -135,7 +127,7 @@
 
 
                                 <div class="user-box">
-                                    <select type="text" select name="year" id="mode" required="required">
+                                    <select type="text" select name="year" id="year" required="required">
                                         <option value="" disabled="disabled" select selected="selected">Year</option>
                                         <option select value="1">1</option>
                                         <option select value="2">2</option>
@@ -146,19 +138,19 @@
                                 </div>
 
 
-                                <div style="padding-top: 5%;"></div>
                                 <div class="user-box">
-                                    <input type="number" name="transaction" id="transaction" required=" ">
+                                    <input type="text" name="transaction" id="transaction" required=" ">
                                     <label for="transaction"> Transaction ID </label>
                                 </div>
-                        
+
                                 <div style="padding-top: 10%;"></div>
+                            
 
                                 <div>
-                                    <input type="file" id="screenshot" name="screenshot" style="display: none;"/>
+                                    <input type="file" id="screenshot" name="screenshot" style="display: none;"   required=" "/>
 
-                                    
-                                        <button type="button" id="custom-button" class="main-button">Upload Tranaction Screenshot</button>
+
+                                   <button type="button" id="custom-button" class="main-button" required=" ">Upload Tranaction Screenshot</button>
                                     
                                     <script type="text/javascript">
                                         const ss = document.getElementById("screenshot");
@@ -170,23 +162,26 @@
                                         });
                                     </script>
 
-                                </div>
+                                
                                 <div style="padding-top: 10%;"></div>
 
+                            </div>
 
 
-
-                                <div><button class="main-button" type="submit"> Register </button></div>
+                                    <div><button class="main-button" name="submit" type="submit"> Register </button></div>
 
                             </form>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
-                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <img src="./assets/images/paytm_qr.png" class=".img-responsive" width="400" height="400">
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                    data-scroll-reveal="enter right move 40px over 0.6s after 0.4s">
+                    <div class="left-heading">
+                    <img src="./assets/images/paytm_qr.jpg" class=".img-responsive" width="350" height="350">
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,78 +208,7 @@
     </div>
 </section>
 <!-- ***** Features Big Item End ***** -->
-    <!-- ***** Contact Us Start ***** -->
-    <section class="section colored" id="contact-us">
-        <div class="container">
-            <!-- ***** Section Title Start ***** -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Contact Us</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <br>
-                </div>
-            </div>
-            <!-- ***** Section Title End ***** -->
-
-            <div class="row">
-                <!-- ***** Contact Text Start ***** -->
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <!-- <h5 class="margin-bottom-30">Keep in touch</h5> -->
-
-                    <div class="contact-text">
-                        <div class="contact-text__item">
-                            <i class="fa fa-map-marker"></i>
-                            <p>UPES Bidholi,Dehradun 248007</p>
-                        </div>
-                        <div class="contact-text__item">
-                            <i class="fa fa-envelope"></i>
-                            <p>upesmtc@gmail.com</p>
-                        </div>
-                        <div class="contact-text__item">
-                            <i class="fa fa-phone"></i>
-                            <p>Kaustubh Asthana <br>+91-8449525994</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Contact Text End ***** -->
-
-                <!-- ***** Contact Form Start ***** -->
-                <!-- <div class="col-lg-8 col-md-6 col-sm-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="get">
-                          <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                </div> -->
-                <!-- ***** Contact Form End ***** -->
-            </div>
-        </div>
-    </section>
-    <!-- ***** Contact Us End ***** -->
+  
 
     <!-- ***** Footer Start ***** -->
     <footer>
