@@ -1,5 +1,7 @@
 
 <?php
+session_start();
+
 $con = mysqli_connect('localhost', 'root');
 if ($con) {
 }
@@ -15,14 +17,14 @@ if (isset($_POST['submit']))
     $course= $_POST['branch'];
     $year= $_POST['year'];
     $transaction= $_POST['transaction'];
-print_r($contact);
 
    $check = "select * from id where sap='$sap'";
 $resultcheck = mysqli_query($con, $check);
 
 $row = mysqli_num_rows($resultcheck);
 if ($row == 1) {
-echo "Already Registered!";
+    echo "<script>alert('Already Registered');
+    window.location = 'index.html';</script>"; ;
 } 
 else {
     $q = "insert into id (username, mail, contact, sap, course, year_, transaction_id) values ('$username', '$mail', '$contact', '$sap', '$course', '$year', '$transaction')";
@@ -55,7 +57,10 @@ if (in_array($fileActualExt, $allowed))
                         $fileNameNew = $sap.".".$fileActualExt;
                         $fileDestnation = 'uploads/'. $fileNameNew;
                         move_uploaded_file($fileTmpName,$fileDestnation);
-                        header("location: register.html?uploadsuccess");
+                        echo "<script>alert('Registration Successful');
+                        window.location = 'index.html';</script>"; 
+
+
                     }
                 else
                     {

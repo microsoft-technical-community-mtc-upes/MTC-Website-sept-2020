@@ -4,15 +4,9 @@ create table id (
     username varchar(250),
     mail varchar(50),
     contact bigint(13),
-    sap bigint(9),
+    sap bigint(9) UNIQUE,
     course VARCHAR(250),
     year_ int(1),
     transaction_id VARCHAR(250),
     PRIMARY KEY (no_)
 );
-
-
-
-
-
-
